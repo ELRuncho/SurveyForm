@@ -8,7 +8,23 @@
 		<div id="title"><h1>Elruncho's Survey Form</h1></div>
 		<p id="description">Tell me how much I suck</p>
 		<form id="survey-form">
-			
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name"><br>
+			<label for="email">Email</label>
+			<input type="text" name="email" id="email"><br>
+			<label for="number">Phone</label>
+			<input type="text" name="number" id="number"><br>
+			<label for="likely">How likely is that you would say that I suck</label>
+			<fieldset id="likely">
+				<input id="def" type="radio" name="likely" value="Definitevly">
+				<label for="def">Definitevly</label><br>
+				<input id="Maybe" type="radio" name="likely" value="Maybe">
+				<label for="Maybe">Maybe</label><br>
+				<input id="NS" type="radio" name="likely" value="Not sure">
+				<label for="NS">Not Sure</label><br>
+				<input id="doyou" type="radio" name="likely" value="Do you suck?">
+				<label for="doyou">Do you suck??</label>
+			</fieldset>
 		</form>
 	</div>
 </body>
