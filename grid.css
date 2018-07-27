@@ -1,0 +1,70 @@
+body{
+	display: grid;
+	grid-template:0.3fr 2fr 0.3fr/1.5fr 5fr 1.5fr;
+}
+
+#container{
+	grid-column: 2/3;
+	grid-row: 2/3;
+	display: grid;
+	grid-template:repeat(4, auto)/1fr ;
+}
+
+#header{
+	grid-row: 1/2;
+}
+
+#survey-form{
+	grid-row: 2/3;
+	display: grid;
+	grid-template-columns: repeat(5,auto)/repeat(2,1fr);
+	grid-row-gap: 9px; 
+}
+
+.label{
+	grid-column: 1/2;
+}
+
+#name{
+	grid-row: 1/2;
+	grid-column: 2/3;
+}
+
+#email{
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+#lemail{
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+
+#lnumber{
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
+
+#number{
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+#ldrop{
+	grid-column: 1/2;
+	grid-row: 4/5;
+}
+
+#dropdown{
+	grid-column: 2/3;
+	grid-row: 4/5;
+}
+
+#lLikely{
+	grid-row: 5/6;
+	grid-column: 1/2;
+}
+#likely{
+	grid-row: 5/6;
+	grid-column: 2/3;
+}
