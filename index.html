@@ -2,26 +2,30 @@
 <html>
 <head>
 	<title>Elruncho's Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="./grid.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
 	<div id="container">
-		<div id="title"><h1>Elruncho's Survey Form</h1></div>
-		<p id="description">Tell me how much I suck</p>
+		<div id="header">
+			<h1 id="title">Elruncho's Survey Form</h1>
+			<p id="description">Tell me how much I suck</p>
+		</div>
 		<form id="survey-form">
-			<label for="name">Name</label>
+			<label class="label" for="name" id="lname">Name</label>
 			<input type="text" name="name" id="name"><br>
-			<label for="email">Email</label>
+			<label class="label" for="email" id="lemail">Email</label>
 			<input type="text" name="email" id="email"><br>
-			<label for="number">Phone</label>
+			<label class="label" for="number" id="lnumber">Phone number</label>
 			<input type="text" name="number" id="number"><br>
+			<label class="label" for="dropdown" id="ldrop">What level of Judgemnt are you exercising</label>
 			<select id="dropdown">
 				<option value="Pro">Profesional</option>
 				<option value="Amateur">Amateur</option>
 				<option value="KeyBoard">KeyBoard Warrior</option>
 				<option value="Other">Other</option>
-			</select>
-			<label for="dropdown">What level of Judgemnt are you exercising</label><br>
-			<label for="likely">How likely is that you would say that I suck</label>
+			</select><br>
+			<label class="label" for="likely" id="lLikely">How likely it is that you would say that I suck</label>
 			<fieldset id="likely">
 				<input id="def" type="radio" name="likely" value="Definitevly">
 				<label for="def">Definitevly</label><br>
