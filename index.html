@@ -4,6 +4,7 @@
 	<title>Elruncho's Survey Form</title>
 	<link rel="stylesheet" type="text/css" href="./grid.css">
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
 </head>
 <body>
 	<div id="container">
@@ -12,12 +13,12 @@
 			<p id="description">Tell me how much I suck</p>
 		</div>
 		<form id="survey-form">
-			<label class="label" for="name" id="lname">Name</label>
-			<input type="text" name="name" id="name"><br>
-			<label class="label" for="email" id="lemail">Email</label>
-			<input type="text" name="email" id="email"><br>
-			<label class="label" for="number" id="lnumber">Phone number</label>
-			<input type="text" name="number" id="number"><br>
+			<label class="label" for="name" id="lname">* Name</label>
+			<input type="text" name="name" id="name" placeholder="Your name here" required><br>
+			<label class="label" for="email" id="lemail">* Email</label>
+			<input type="text" name="email" id="email" placeholder="Example@example.com" required><br>
+			<label class="label" for="number" id="lnumber">* Phone number</label>
+			<input type="text" name="number" id="number" required placeholder="enter a valid phone number"><br>
 			<label class="label" for="dropdown" id="ldrop">What level of Judgemnt are you exercising</label>
 			<select id="dropdown">
 				<option value="Pro">Profesional</option>
@@ -35,6 +36,7 @@
 				<label for="NS">Not Sure</label><br>
 				<input id="doyou" type="radio" name="likely" value="Do you suck?">
 				<label for="doyou">Do you suck??</label>
+
 			</fieldset>
 		</form>
 	</div>
