@@ -13,12 +13,12 @@
 			<p id="description">Tell me how much I suck</p>
 		</div>
 		<form id="survey-form">
-			<label class="label" for="name" id="lname">* Name</label>
-			<input type="text" name="name" id="name" placeholder="Your name here" required><br>
-			<label class="label" for="email" id="lemail">* Email</label>
-			<input type="text" name="email" id="email" placeholder="Example@example.com" required><br>
-			<label class="label" for="number" id="lnumber">* Phone number</label>
-			<input type="text" name="number" id="number" required placeholder="enter a valid phone number"><br>
+			<label class="label" for="name" id="name-label">* Name</label>
+			<input type="text" name="name" id="name" placeholder="Your name here" required ><br>
+			<label class="label" for="email" id="email-label">* Email</label>
+			<input type="email" name="email" id="email" placeholder="Example@example.com" required pattern=".+@." size="30" title="must be a valid email"><br>
+			<label class="label" for="number" id="number-label">* Phone number</label>
+			<input type="number" name="number" id="number" required placeholder="enter a valid phone number" min="0000000" max="9999999999"><br>
 			<label class="label" for="dropdown" id="ldrop">What level of Judgemnt are you exercising</label>
 			<select id="dropdown">
 				<option value="Pro">Profesional</option>
@@ -36,9 +36,22 @@
 				<label for="NS">Not Sure</label><br>
 				<input id="doyou" type="radio" name="likely" value="Do you suck?">
 				<label for="doyou">Do you suck??</label>
-
 			</fieldset>
+			<label class="label" for="stuff" id="label-stuff">Which skills do I suck the most at?</label><br>
+			<fieldset id="stuff">
+				<input type="checkbox" name="HTML" value="html">
+				<label id="label">HTML5</label><br>
+				<input type="checkbox" name="CSS" value="css">
+				<label id="label">CSS</label><br>
+				<input type="checkbox" name="Javascrip" value="JS">
+				<label id="label">Javascript</label><br>
+				<input type="checkbox" name="all" value="all">
+				<label id="label">All of the abobe</label><br>
+			</fieldset>
+			<textarea rows="4" cols="20" name="coment" form="survey-form" id="text">Please share your thougths</textarea>
+			<input type="submit" value="Submit" id="submit">
 		</form>
+		<br>
 	</div>
 </body>
 </html>
