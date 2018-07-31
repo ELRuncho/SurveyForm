@@ -10,6 +10,17 @@ body{
 	text-align: center;
 }
 
+#text{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#submit{
+	margin-right: 10%;
+	margin-left: 10%; 
+	height: 50px;
+	background-color: #9fff80;
+}
+
 @media(min-width: 800px){
 	.label{
 		text-align: right;
@@ -40,7 +51,7 @@ body{
 		margin-left: 3%;
 		margin-top: 15px;
 		font-family: 'Quicksand', sans-serif;
-		width: 79vw
+		width: 60vw
 	}
 	h1{
 		font-family: 'Quicksand', sans-serif;
